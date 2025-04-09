@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --Font-size: 16px;
+  --White: hsl(0, 0%, 100%);
+  --Light-pink: hsl(275, 100%, 97%);
+  --Grayish-purple: hsl(292, 16%, 49%);
+  --Dark-purple: hsl(292, 42%, 14%);
+  --font-family: "Work Sans", sans-serif;
+  --font-optical-sizing: auto;
+  --font-weight-regular: 400;
+  --font-weight-SemiBold: 600;
+  --font-weight-bold: 700;
+  --font-style: normal;
+}
+
+body {
+  background-image: url("/faq-accordion-main/assets/images/background-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  /* height: 300px; */
+  height: 40vh;
+  font-family: var(--font-family);
+}
+
+.container {
+  width: 35%;
+  margin: 0 auto;
+  position: relative;
+  top: 80px;
+  left: 70px;
+  border-radius: 10px;
+  background-color: var(--White);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.faq-box {
+  width: 100%;
+  max-width: 600px;
+  padding: 32px;
+}
+
+.faq_box h1 {
+  font-size: 48px;
+  margin-bottom: 24px;
+  color: var(--Dark-purple);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family);
+}
+
+p {
+  color: var(--Dark-purple);
+  font-weight: var(--font-weight-regular);
+  width: 90%;
+}
+
+.faq-logo {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.expand-icon {
+  display: flex;
+  gap: 12px;
+}
+
+.questions {
+  font-weight: var(--font-weight-SemiBold);
+}
+
+.questions:hover {
+  color: var(--Grayish-purple);
+  cursor: pointer;
+}
+
+.answers {
+  color: var(--Grayish-purple);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
